@@ -88,8 +88,8 @@ button {
 }
 
 .hero {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   background-color: #1b9fa8;
@@ -104,6 +104,8 @@ button {
   background-position: center;
   background-size: cover;
   text-align: center;
+  position: sticky;
+  top: -1px;
 }
 
 .search-form {

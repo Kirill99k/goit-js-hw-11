@@ -23,7 +23,7 @@ loadMoreBtn.refs.button.addEventListener('click', handleLoadMoreImage);
 
 async function handleSearchImageClickBtn(e) {
   e.preventDefault();
-
+  console.log(e);
   refs.searchInput.focus();
 
   imageApiService.query = e.target.searchQuery.value.trim();
@@ -181,8 +181,6 @@ window.onscroll = debounce(() => {
 }, 300);
 
 function scrollFunction() {
-  // console.log(document.body.scrollTop);
-  // console.log(document.documentElement.scrollTop);
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     document.getElementById('topBtn').style.display = 'block';
   } else {
